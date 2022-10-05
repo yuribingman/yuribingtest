@@ -144,7 +144,7 @@
   <div class="w3-container w3-padding-64" id="contact">
     <h1>Contact</h1><br>
     <p>You can also contact me by email yuriko.bingman@tccd.edu, or you can send me a message here:</p>
-    <form id="my-form" name="contact" method="POST" data-netlify="true">
+    <form class="w3-container" id="my-form" name="contact" method="POST" data-netlify="true">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Your Email" required name="email"></p>
       <!-- <p>
@@ -160,7 +160,7 @@
       <!-- <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p> -->
       <p>
-        <label>Your Role: <select name="role[]" multiple>
+        <label>Quote:<br> <select name="role[]" multiple>
           <option value="sswp">Single page Website</option>
           <option value="sswpf">Single page Website w/ Form</option>
           <option value="mswp">Multi page Website w/ Form</option>
@@ -169,12 +169,11 @@
         </label>
       </p>
       <p>
-        <label>Message: <textarea name="message"></textarea></label>
+        <label>Message:<br> <textarea class="w3-input w3-border w3-animate-input" name="message"></textarea></label>
       </p>
       <p>
         <button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button>
       </p>
-      <!-- <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p> -->
     </form>
   </div>
   
