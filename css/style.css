@@ -5,10 +5,9 @@ a:link, a:visited {
     text-decoration: none;
     display: inline-block;
 }
-
-a:hover, a:active {
-    /* background-color: red; */
-}
+/* a:hover, a:active {
+    background-color: red;
+} */
 
 #home{
     background: #e6c6ad url(/images/dog/dog.jpg);
@@ -22,19 +21,32 @@ a:hover, a:active {
 
 .backTextLeft{
     position:relative;
+    z-index: -1;
     width: 500px;
     top: 200px;
 }
 .backTextRight{
     position:relative;
+    z-index: -1;
     width: 500px;
     bottom: 200px;
     Left: 1010px;
 }
+.backTextWallpaper{
+    position:absolute;
+    z-index: -10;
+    width: 600px;
+    top: 200px;
+    Left: 100px;
+}
+.backTextWallpaper2{
+    position:absolute;
+    z-index: -1;
+    top: 980px;
+    Left: 100px;
+}
 .containerbackgroundLeft {  
     margin: 1rem;
-    z-index: -1;
-    /* color: #47daff; */
     -webkit-text-stroke: 1px black; /* width and color */
     font-family: Arial Black; color: #fff;
     transform: rotate(300deg);
@@ -42,11 +54,16 @@ a:hover, a:active {
 }
 .containerbackgroundRight {
     margin: 1rem;
-    z-index: -1;
     -webkit-text-stroke: 1px black; /* width and color */
     font-family: Arial Black; color: #fff;
     transform: rotate(-350deg);
     -webkit-transform: rotate(-330deg);
+}
+.containerWallpaper {  
+    margin: 1rem;
+    font-family: Arial Black; color: #e91e63;
+    transform: rotate(400deg);
+    -webkit-transform: rotate(400deg);
 }
 
 h1::before {  
